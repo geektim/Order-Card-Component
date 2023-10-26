@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+/* style  for the container */
+.container {
+    max-width: 1440px;
+    height: 100svh;
+    margin: 0 auto;
+    background-image: url('pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for the card */
+.card {
+    width: 450px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* style for the top image */
+.img-container {
+    width: inherit;
+    margin-bottom: 30px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+/*style for the middle part texts */
+.head-text {
+    margin-bottom: 20px;
+}
+
+.head-text h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.desc-text {
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.desc-text p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* style for the price tag */
+.price-container {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.price-container .music-icon {
+    margin-right: 20px;
+}
+
+.price-container .price-tag {
+    margin-right: 110px;
+}
+
+.price-container .price-tag .price-text {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-container .price-tag .amount {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.price-container .link a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.price-container .link a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .7;
+}
+
+/* style for the button */
+.btn {
+    margin-bottom: 20px;
+}
+
+.btn button {
+    font-size: 16px;
+    font-weight: 700;
+    width: 350px;
+    padding: 13px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 13px 10px 2px rgba(0, 0, 0, .1);
+}
+
+.btn button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+/* style for the foot text */
+.foot-text {
+    margin-bottom: 30px;
+}
+
+.foot-text p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.foot-text p:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+/* style for mobile */
+@media (max-width: 767px) {
+    .container {
+        background-image: url('pattern-background-mobile.svg');
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .price-container {
+        width: 300px;
+    }
+
+    .price-container .price-tag {
+        margin-right: 60px;
+    }
+
+    .btn button {
+        width: 300px;
+    }
+}
